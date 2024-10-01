@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabel com css</title>
+    <style>
+        table,th,td{ /*formata as table, th e td*/
+            border: 2px solid;/*inserir espessura da borda*/
+            text-align: center;/*alinhamento do texto*/
+            border-collapse: collapse;/*juntar as bordas/tira duplicidade de bordas*/
+            padding: 10px;/*espaçamento interno*/
+        }
+        tr:nth-child(even){/*seleciona linhas impares*/
+            background-color: rgb(54, 101, 189);/*cor de fundo*/
+            color: rgb(9, 252, 211);
+        }
+        tr:hover{/*animação ao passar o mouse*/
+            background-color: rgb(6, 253, 241);
+            color: rgb(5, 0, 0);
+        }
+        th{/*formata o cabeçalho*/
+            background-color: rgb(146, 62, 202);
+            color: rgb(9, 252, 211);
+            font-size: xx-large;/*tamanho da fonte*/
+        }
+        .titulo{/*formata o titulo*/
+            font-weight: bolder;/*negrito*/
+            text-transform: uppercase;/*transformação do texto(ex:tudo maiusculo)*/
+        }
+        table{width: 90%;
+            margin-top:3%;/*margem superior(externo)*/
+            margin-left:5%;/*margem esquerda(externo)*/
+            margin-right:5%;/*margem direita(externo)*/
+        }
+        img{
+            width: 80px;/*largura da imagem*/
+            vertical-align: middle;
+        }
+        body{color: rgb(9, 252, 211);
+            background-color: rgba(4, 21, 117, 0.822);
+        }
+    </style>
+</head>
+<body>
+    <table>
+       <thead>
+        <tr>
+            <th colspan="6">Quadro de medalhas paraolimpiadas</th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+            <td class="titulo">POSIÇÃO</td>
+            <td class="titulo">PAÍS</td>
+            <td class="titulo">OURO</td>
+            <td class="titulo">PRATA</td>
+            <td class="titulo">BRONZE</td>
+            <td class="titulo">TOTAL</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img src="../web/img/china.png" alt="china" width="30"></td>
+            <td>94</td>
+            <td>76</td>
+            <td>50</td>
+            <td>220</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img src="../web/img/EUA.png" alt="china" width="30"></td>
+            <td>49</td>
+            <td>44</td>
+            <td>31</td>
+            <td>124</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img src="../web/img/brasil.jpg" alt="china" width="30"></td>
+            <td>36</td>
+            <td>42</td>
+            <td>27</td>
+            <td>105</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img src="../web/img/paises baixos.jpg" alt="china" width="30"></td>
+            <td>27</td>
+            <td>17</td>
+            <td>12</td>
+            <td>56</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img src="../web/img/reino unido.png" alt="china" width="30"></td>
+            <td>25</td>
+            <td>26</td>
+            <td>38</td>
+            <td>89</td>
+        </tr>
+       </tbody>       
+    </table>
+</body>
+</html>
