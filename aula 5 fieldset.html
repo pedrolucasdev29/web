@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <table>
+                <tr>
+                    <td>Nome:</td>
+                    <td><input type="text" ></td>
+                </tr>
+                <tr>
+                    <td>Nome:</td>
+                    <td><input type="number" min="0" max="120" ></td>
+                </tr>
+                <tr>
+                    <td>Data de nascimento</td>
+                    <td><input type="date"></td>
+                </tr>
+
+            </table>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <table>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" ></td>
+                </tr>
+                <tr>
+                    <td>Tem experiência em TI?</td>
+                    <td><input type="radio" name="resposta" value="sim" >sim <br>
+                    <input type="radio" name="resposta" value="não" >não <br>
+                    </td>
+                </tr>
+                <tr>
+                <td>Disponibilidade:</td>
+                <td><input type="checkbox" name="turno1" value="manhã">manhã<br> 
+                <input type="checkbox" name="turno2" value="tarde">tarde<br> 
+                <input type="checkbox" name="turno3" value="noite">noite<br>
+                </td>
+                </tr>
+                Escolaridade: <br>
+                <select name="nivel" id="nivel">
+                    <option value="medio">medio</option>
+                    <option value="superior">superior</option>
+                    
+                </select>
+                <input type="submit" value="enviar formulário"><br>
+          </table>
+        </fieldset>
+</body>
+</html>
